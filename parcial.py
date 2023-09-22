@@ -17,7 +17,7 @@ import numpy as np
 import pandas as pd
 
 # Ruta al archivo CSV (asegúrate de usar barras invertidas dobles o una barra inclinada)
-DatasetName = r'D:\juegos etc\Usuario\Documents\GitHub\Analitica-Datos-Python\data\iris.data'
+DatasetName = r'.\data\iris.data'
 
 
 # Carga el archivo CSV en un DataFrame de pandas
