@@ -62,3 +62,14 @@ print("Minimo valor de la columna 4 es: ",min_colum4,"\n")
 
 vector_3x3 = dataClass2.iloc[:3, :3].values
 print(vector_3x3)
+
+#El analisis de la base de datos contiene 3 clases, donde cada clase representa un tipo de planta de iris (Iris Setosa, Iris Versicolor, Iris Virginica)
+#donde incluyen mediciones numéricas de la longitud y el ancho de los sépalos y pétalos de las plantas.
+#No contiene valores Faltantes 
+#Número de Atributos: 4 atributos 
+#Clase:
+#Iris Setosa
+#Iris Versicolour
+#Iris Virginica
+#Tiene 1500 Instancias : (50 en cada una de las tres clases)
+#Número de Atributos: 4 atributos numéricos, predictivos y la clase
