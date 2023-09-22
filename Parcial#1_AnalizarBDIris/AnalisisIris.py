@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
 import matplotlib.pyplot as plt
 
-DB_Iris = r"C:\Users\USUARIO\Documents\GitHub\Analitica-Datos-Python\Parcial#1_AnalizarBDIris\iris\iris.data" 
+DB_Iris = r".\iris\iris.data" 
 Data_Iris = pd.read_csv(DB_Iris, sep=',', header=None)
 # print(Data_Iris.head())
 
