@@ -13,6 +13,7 @@ DB_Iris = r"C:\Users\USUARIO\Documents\GitHub\Analitica-Datos-Python\Parcial#1_A
 Data_Iris = pd.read_csv(DB_Iris, sep=',', header=None)
 # print(Data_Iris.head())
 
+#ESTOS SON LOS MAXIMOS Y MINIMOS DE TODAS LAS COLUMNAS
 # print(Data_Iris.max())
 # print(Data_Iris.min())
 
@@ -62,7 +63,9 @@ print("Numero de muestras por clase Iris-Setosa: "+str(Num_Class_IrisVirginica)+
 
 Data_Iris_AsNumpy = np.concatenate((Iris_Setosa.values, Iris_Versicolor.values, Iris_Virginica.values), axis=0)
 
+#Esta variable (X) representa todas las columnas menos la columna de las clases
 X = Data_Iris_AsNumpy[:,0:4]
+#Esta variable (Y) respresenta la columna de las clases
 Y = Data_Iris_AsNumpy[:,4]
 
 # print(X)
@@ -71,5 +74,5 @@ Y = Data_Iris_AsNumpy[:,4]
 #ACTIVIDADES:
 #N°1 - VECTOR EN LINEA DEL 3X3 A PARTIR DE LA SEGUNDA CLASE (IRIS-VERSICOLOR) 
 Vector3x3 = Iris_Versicolor.iloc[:3,:4]
-Vector3x3 = np.concatenate((Vector3x3.values))
-print( "\n\n", Vector3x3 )
+Vector3x3 = Vector3x3.applymap(str).apply('--'.join, axis=1)
+print( "\n\n", Vector3x3.values )
